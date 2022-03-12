@@ -1,0 +1,318 @@
+<html>
+    <head>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!-- CropperJS -->
+        <script src="resources/cropperjs/cropper.min.js"></script>
+        <link rel="stylesheet" href="resources/cropperjs/cropper.min.css">
+
+        <!-- Pumahara -->
+        <link rel="stylesheet" href="resources/css/main.css">
+        <link rel="stylesheet" href="resources/css/ext.css">
+        <link rel="stylesheet" href="resources/icon-dev-handoff/css/fontello.css">
+
+        <meta name="viewport" content="width=device-width; initial-scale=1">
+        <title>Change E-mail</title>
+    </head>
+    <body>
+        <div class="shadow d-xl-none row justify-content-between align-items-center bg-white" style="height: 64px; position: fixed; top: 0; left: 0; width: 100vw; z-index: 1050">
+            <div class="col-auto ms-2"><a href="#" class="sidebar-toggle"><i class="bi bi-three-dots-vertical me-2"></i> MENU</a></div>
+            <div class="col-auto"><h5>PUMAHARA</h5></div>
+            <div class="col-auto me-2"><div style="width: 32px; height: 32px"><div style="display: flex; align-items: center; justify-content: center; background-color: white; border: 2px solid var(--brownlite); border-radius: 50%; width: 32px; height: 32px"><div class="demo-icon icon-bell" style="margin: auto"></div></div></div></div>
+        </div>
+        <div class="main-viewport" style="display: flex; flex-direction: row">
+            <div class="sidebar offcanvas ext offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1" id="offcanvas">
+                <div class="offcanvas-header justify-content-center">
+                    <h5 class="offcanvas-title text-center">PUMAHARA</h5>
+                </div>
+                <div class="d-xl-none" style="height: 64px"></div>
+                <div class="offcanvas-profile-banner" style="height: 16px"></div>
+                <div class="offcanvas-profile-banner" style="height: 48px">
+                    <div style="position: absolute; width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-around">
+                        <div style="width: 32px; height: 32px"></div>
+                        <div><img style="background-color: white; border: 2px solid var(--brownlite); border-radius: 50%" src="resources/images/profile.png" width="96" height="96"></div>
+                        <div style="width: 32px; height: 32px"><div class="d-none d-xl-block"><div style="display: flex; align-items: center; justify-content: center; background-color: white; border: 2px solid var(--brownlite); border-radius: 50%; width: 32px; height: 32px"><div class="demo-icon icon-bell" style="margin: auto"></div></div></div></div>
+                    </div>
+                </div>
+                <div style="height: 48px"></div>
+                <h6 style="text-align: center; margin-top: 8px">Olivia Emily</h6>
+                <div class="offcanvas-body">
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="item row align-items-center">
+                                <div class="col-1"><i class="demo-icon icon-home"></i></div>
+                                <div class="col ms-2">Home</div>
+                                <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="item row align-items-center">
+                                <div class="col-1"><i class="demo-icon icon-kaiako"></i></div>
+                                <div class="col ms-2">Kaiako</div>
+                                <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="item row align-items-center">
+                                <div class="col-1"><i class="demo-icon icon-tauira"></i></div>
+                                <div class="col ms-2">Tauira</div>
+                                <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="item row align-items-center">
+                                <div class="col-1"><i class="demo-icon icon-classes"></i></div>
+                                <div class="col ms-2">Classes</div>
+                                <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="item row align-items-center">
+                                <div class="col-1"><i class="demo-icon icon-ropu"></i></div>
+                                <div class="col ms-2">Ropu</div>
+                                <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="item row align-items-center">
+                                <div class="col-1"><i class="demo-icon icon-pumanawa"></i></div>
+                                <div class="col ms-2">Pumanawa</div>
+                                <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="item row align-items-center">
+                                <div class="col-1"><i class="demo-icon icon-plan"></i></div>
+                                <div class="col ms-2">Plan</div>
+                                <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="item row align-items-center">
+                                <div class="col-1"><i class="demo-icon icon-maramataka"></i></div>
+                                <div class="col ms-2">Maramataka</div>
+                                <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="item row align-items-center">
+                                <div class="col-1"><i class="demo-icon icon-journal"></i></div>
+                                <div class="col ms-2">Journal</div>
+                                <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action active">
+                            <div class="item row align-items-center">
+                                <div class="col-1"><i class="demo-icon icon-setting"></i></div>
+                                <div class="col">Account Setting</div>
+                                <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action text-danger">
+                            <div class="item row align-items-center">
+                                <div class="col-1"><i class="demo-icon icon-logout"></i></div>
+                                <div class="col ms-2">Logout</div>
+                                <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar sidebar-toggle offcanvas-backdrop ext fade"></div>
+            <div class="main-content">
+                <div class="d-xl-none" style="height: 64px"></div>
+                <div class="pad">
+                    <!-- Here starts the magic -->
+                    <div class="modal fade" id="pp-modal">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Update Profile Picture</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body" style="height: 500px">
+                                    <div style="width: 100%; height: 100%"><img id="pp-img" src="resources/images/profile.png" style="display: block; max-width: 100%; max-height: 100%"></div>
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <button type="button" class="btn btn-main col">Update Picture</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="resend-modal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Resend Email Confirmation</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div>Hi olivia emily, this will resend confirmation to <strong>oliviaemily20@gmail.com</strong></div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-main col">Resend</button>
+                                    <button type="button" class="btn btn-outline-main col" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <h3 class="section-title"><i class="demo-icon icon-setting"></i> Account Setting</h3>
+                        <div class="bg-white p-3" style="border-radius: 16px">
+                            <nav class="nav ext flex-row">
+                                <a href="#" class="nav-link active">Profile</a>
+                                <a href="#" class="nav-link">Password</a>
+                            </nav>
+                            <div class="pad-v show-if-targeted" id="inuse">
+                                <div class="pad-v alert alert-danger alert-dismissible" role="alert">
+                                    <span>This email is already in use</span>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                </div>
+                            </div>
+                            <div class="pad-v show-if-targeted" id="success">
+                                <div class="pad-v alert alert-success alert-dismissible" role="alert">
+                                    <span>Your email has been updated</span>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                </div>
+                                <div class="pad-v card">
+                                    <div class="card-body">
+                                        <h6 class="card-title"><strong>Email change</strong></h6>
+                                        <div class="mt-2">Check your email <strong>oliviaamelia20@gmail.com</strong> to confirm your email address, the change won't take effect until confirmed</div>
+                                        <div class="mt-2">Don't see a confirmation email? <a href="#success" class="resend">Resend email confirmation</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pad-v show-if-targeted" id="resent">
+                                <div class="pad-v alert alert-success alert-dismissible" role="alert">
+                                    <span>The confirmation message will be resent to oliviaemily20@gmail.com</span>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                </div>
+                                <div class="pad-v card">
+                                    <div class="card-body">
+                                        <h6 class="card-title"><strong>Email change</strong></h6>
+                                        <div class="mt-2">Check your email <strong>oliviaamelia20@gmail.com</strong> to confirm your email address, the change won't take effect until confirmed</div>
+                                        <div class="mt-2">Don't see a confirmation email? <a href="#success">Resend email confirmation</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pad-v show-if-targeted" id="confirm-success">
+                                <div class="pad-v alert alert-success alert-dismissible" role="alert">
+                                    <span>Email confirmation success</span>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                </div>
+                            </div>
+                            <div class="pad-v show-if-targeted" id="pp-success">
+                                <div class="pad-v alert alert-success alert-dismissible" role="alert">
+                                    <span>Profile picture has been successfully updated</span>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                </div>
+                            </div>
+                            <div class="py-4 row">
+                                <div class="col-12">
+                                    <div class="row justify-content-start align-items-center">
+                                        <div class="col-12 col-lg-auto">
+                                            <div class="row justify-content-center">
+                                                <div class="col-auto"><img style="background-color: white; border: 4px solid var(--brownlite); border-radius: 50%" src="resources/images/profile.png" width="128" height="128"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-auto d-lg-none" style="width: 1.0rem; height: 1.0rem"></div>
+                                        <div class="col-12 col-lg-auto">
+                                            <div class="row justify-content-center">
+                                                <div class="col col-lg-auto"><button type="button" class="btn btn-outline-main ext show-pp" style="width: 100%"><i class="bi bi-camera-fill me-2"></i> Upload New Picture</button></div>
+                                            </div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-auto text-muted mt-2">JPG or PNG max size of 800 KB</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="mt-4">
+                                        <label>First Name</label>
+                                        <input class="form-control mt-2" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="mt-4">
+                                        <label>Last Name</label>
+                                        <input class="form-control mt-2" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="mt-4">
+                                        <label>E-mail</label>
+                                        <input class="form-control mt-2" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="mt-4">
+                                        <label>Phone Number</label>
+                                        <input class="form-control mt-2" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mt-4">
+                                        <label>Address</label>
+                                        <textarea class="form-control mt-2" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col col-lg-auto">
+                                <button type="submit" class="btn btn-main ext" style="width: 100%">Save Changes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+
+$(document).ready(function() {
+    $('.offcanvas-backdrop').on('click', function() {
+        $('.offcanvas').removeClass('show');
+    });
+    $('.sidebar-toggle').on('click', function() {
+        if ($('.sidebar').hasClass('show')) {
+            $('.sidebar').removeClass('show');
+        } else {
+            $('.sidebar').addClass('show');
+        }
+    });
+    $('a.sidebar-item').on('click', function(e) {
+        $('a.sidebar-item').removeClass('active');
+        $(e.currentTarget).addClass('active');
+    });
+    $('a.nav-link').on('click', function(e) {
+        $('a.nav-link').removeClass('active');
+        $(e.currentTarget).addClass('active');
+    });
+    $('.resend').on('click', function() {
+        var modal = new bootstrap.Modal(document.getElementById('resend-modal'));
+        modal.show();
+    });
+    $('.show-pp').on('click', function() {
+        var modal = new bootstrap.Modal(document.getElementById('pp-modal'));
+        modal.show();
+
+        setTimeout(function() {
+            var cropper = new Cropper(document.getElementById('pp-img'), {
+                aspectRatio: 1.0,
+                crop: function(e) {
+                    console.log('image cropped');
+                }
+            });
+        }, 500);
+    });
+});
+</script>
+

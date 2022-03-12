@@ -1,3 +1,7 @@
+body.ext {
+    background: #f5f6f8;
+}
+
 .bg-brown {
     background-color: var(--brown);
 }
@@ -35,6 +39,13 @@
     height: 100%;
     overflow-y: auto;
     display: none;
+    width: 100vw;
+}
+
+@media (min-width: 992px) {
+    .offcanvas.ext {
+        width: 400px;
+    }
 }
 
 .offcanvas.ext .offcanvas-header {
@@ -80,6 +91,11 @@
     overflow-y: auto;
 }
 
+.list-group-item.ext {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
 .list-group-item.ext.active {
     border-color: rgba(0, 0, 0, 0.125);
     background-color: inherit;
@@ -87,10 +103,7 @@
 }
 
 .list-group-item.ext.active .item {
-    border-style: solid;
-    border-color: var(--brown);
-    border-width: 0px;
-    border-left-width: 4px;
+    box-shadow: inset 4px 0px var(--brown);
 }
 
 .pad {
@@ -186,5 +199,41 @@
     .ext-label {
         height: 3.5rem;
     }
+}
+
+.btn.simple {
+    background: inherit;
+    border-color: var(--black);
+    color: var(--black);
+}
+
+.btn.simple:hover {
+    color: var(--brownlite);
+}
+
+.btn.notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid var(--brownlite);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.btn.notification .icon {
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+.btn.notification .badge {
+    position: absolute !important;
+    top: 12px !important;
+    left: 32px !important;
+    transform: translate(-50%, -50%) !important;
+    background-color: rgb(var(--bs-danger-rgb)) !important;
+    border-radius: 50% !important;
+    padding: 0.35rem !important;
 }
 

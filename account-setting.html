@@ -1,0 +1,433 @@
+<html>
+    <head>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!-- CropperJS -->
+        <script src="resources/cropperjs/cropper.min.js"></script>
+        <link rel="stylesheet" href="resources/cropperjs/cropper.min.css">
+
+        <!-- Pumahara -->
+        <link rel="stylesheet" href="resources/css/main.css">
+        <link rel="stylesheet" href="resources/css/ext.css">
+        <link rel="stylesheet" href="resources/icon-dev-handoff/css/fontello.css">
+
+        <meta name="viewport" content="width=device-width; initial-scale=1">
+        <title>Account Setting</title>
+    </head>
+    <body class="ext">
+        <div class="shadow-sm d-xl-none row justify-content-between align-items-center bg-white" style="height: 64px; position: fixed; top: 0; left: 0; width: 100vw; z-index: 1050; margin-left: 0">
+            <div class="col-auto ms-2"><a href="#" class="sidebar-toggle"><i class="bi bi-three-dots-vertical me-2"></i><span class="menu-text">MENU</span></a></div>
+            <div class="col-auto"><img class="header-logo" src="resources/images/logo2.svg"></div>
+            <div class="col-auto me-2">
+                <div class="notification-container">
+                    <button type="button" class="btn simple notification position-relative">
+                        <span class="icon demo-icon icon-bell"></span>
+                        <span class="badge"><span class="visually-hidden"></span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="main-viewport" style="display: flex; flex-direction: row">
+            <div class="sidebar offcanvas ext offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1" id="offcanvas">
+                <div class="offcanvas-header justify-content-center">
+                    <div class="offcanvas-title"><img src="resources/images/logo2white.svg" height="48"></div>
+                </div>
+                <div class="offcanvas-profile-banner d-xl-none" style="height: 16px"></div>
+                <div class="offcanvas-profile-banner" style="height: 40px">
+                    <div style="position: absolute; width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-around">
+                        <div style="width: 40px; height: 40px"></div>
+                        <div><img style="background-color: white; border: 2px solid var(--brownlite); border-radius: 50%" src="resources/images/profile.png" width="80" height="80"></div>
+                        <div style="width: 40px; height: 40px">
+                            <div class="d-none d-xl-block">
+                                <div class="notification-container">
+                                    <button type="button" class="btn simple notification position-relative">
+                                        <span class="icon demo-icon icon-bell"></span>
+                                        <span class="badge"><span class="visually-hidden"></span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 40px"></div>
+                <h6 style="text-align: center; margin-top: 8px">Olivia Emily</h6>
+                <div class="offcanvas-body">
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="sidebar-nav">
+                                <div class="nav-icon"><i class="demo-icon icon-home"></i></div>
+                                <div class="nav-text">Home</div>
+                                <div class="nav-arrow"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="sidebar-nav">
+                                <div class="nav-icon"><i class="demo-icon icon-kaiako"></i></div>
+                                <div class="nav-text">Kaiako</div>
+                                <div class="nav-arrow"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="sidebar-nav">
+                                <div class="nav-icon"><i class="demo-icon icon-tauira"></i></div>
+                                <div class="nav-text">Tauira</div>
+                                <div class="nav-arrow"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="sidebar-nav">
+                                <div class="nav-icon"><i class="demo-icon icon-classes"></i></div>
+                                <div class="nav-text">Classes</div>
+                                <div class="nav-arrow"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="sidebar-nav">
+                                <div class="nav-icon"><i class="demo-icon icon-ropu"></i></div>
+                                <div class="nav-text">Roopu</div>
+                                <div class="nav-arrow"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="sidebar-nav">
+                                <div class="nav-icon"><i class="demo-icon icon-pumanawa"></i></div>
+                                <div class="nav-text">Nga Pumanawa</div>
+                                <div class="nav-arrow"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="sidebar-nav">
+                                <div class="nav-icon"><i class="demo-icon icon-plan"></i></div>
+                                <div class="nav-text">Plan</div>
+                                <div class="nav-arrow"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="sidebar-nav">
+                                <div class="nav-icon"><i class="demo-icon icon-maramataka"></i></div>
+                                <div class="nav-text">Maramataka</div>
+                                <div class="nav-arrow"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action">
+                            <div class="sidebar-nav">
+                                <div class="nav-icon"><i class="demo-icon icon-journal"></i></div>
+                                <div class="nav-text">Journal</div>
+                                <div class="nav-arrow"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action active">
+                            <div class="sidebar-nav">
+                                <div class="nav-icon"><i class="demo-icon icon-setting"></i></div>
+                                <div class="nav-text">Account Setting</div>
+                                <div class="nav-arrow"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="sidebar-item list-group-item ext list-group-item-action text-danger">
+                            <div class="sidebar-nav">
+                                <div class="nav-icon"><i class="demo-icon icon-logout"></i></div>
+                                <div class="nav-text">Logout</div>
+                                <div class="nav-arrow"><i class="bi bi-chevron-right"></i></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar sidebar-toggle offcanvas-backdrop ext fade"></div>
+            <div class="main-content">
+                <div class="pad">
+                    <!-- Here starts the magic -->
+                    <div class="modal fade" id="pp-modal">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Update Profile Picture</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body" style="height: 500px">
+                                    <div style="width: 100%; height: 100%"><img id="pp-img" src="resources/images/profile.png" style="display: block; max-width: 100%; max-height: 100%"></div>
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <button type="button" class="btn btn-main col">Update Picture</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="resend-modal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Resend Email Confirmation</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div>Hi olivia emily, this will resend confirmation to <strong>oliviaemily20@gmail.com</strong></div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-main col">Resend</button>
+                                    <button type="button" class="btn btn-outline-main col" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="section-title"><i class="demo-icon icon-setting"></i> Account Setting</h3>
+                    <div class="bg-white p-3" style="border-radius: 16px">
+                        <nav class="nav ext flex-row">
+                            <a href="#" class="page-nav nav-link active" data-page="email-change">Profile</a>
+                            <a href="#" class="page-nav nav-link" data-page="password-change">Password</a>
+                        </nav>
+                        <div class="page" data-page="email-change">
+                            <form>
+                                <div class="pad-v show-if-targeted" data-trigger="email-change" id="email-inuse">
+                                    <div class="pad-v alert alert-danger alert-dismissible" role="alert">
+                                        <span>This email is already in use</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                    </div>
+                                </div>
+                                <div class="pad-v show-if-targeted" data-trigger="email-change" id="email-success">
+                                    <div class="pad-v alert alert-success alert-dismissible" role="alert">
+                                        <span>Your email has been updated</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                    </div>
+                                    <div class="pad-v card">
+                                        <div class="card-body">
+                                            <h6 class="card-title"><strong>Email change</strong></h6>
+                                            <div class="mt-2">Check your email <strong>oliviaamelia20@gmail.com</strong> to confirm your email address, the change won't take effect until confirmed</div>
+                                            <div class="mt-2">Don't see a confirmation email? <a href="#success" class="resend">Resend email confirmation</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pad-v show-if-targeted" data-trigger="email-change" id="email-resent">
+                                    <div class="pad-v alert alert-success alert-dismissible" role="alert">
+                                        <span>The confirmation message will be resent to oliviaemily20@gmail.com</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                    </div>
+                                    <div class="pad-v card">
+                                        <div class="card-body">
+                                            <h6 class="card-title"><strong>Email change</strong></h6>
+                                            <div class="mt-2">Check your email <strong>oliviaamelia20@gmail.com</strong> to confirm your email address, the change won't take effect until confirmed</div>
+                                            <div class="mt-2">Don't see a confirmation email? <a href="#success">Resend email confirmation</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pad-v show-if-targeted" data-trigger="email-change" id="email-confirm-success">
+                                    <div class="pad-v alert alert-success alert-dismissible" role="alert">
+                                        <span>Email confirmation success</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                    </div>
+                                </div>
+                                <div class="pad-v show-if-targeted" data-trigger="email-change" id="email-pp-success">
+                                    <div class="pad-v alert alert-success alert-dismissible" role="alert">
+                                        <span>Profile picture has been successfully updated</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                    </div>
+                                </div>
+                                <div class="pad-v">
+                                    <div class="pb-4 row">
+                                        <div class="col-12">
+                                            <div class="row justify-content-start align-items-center">
+                                                <div class="col-12 col-md-auto">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto"><img style="background-color: white; border: 4px solid var(--brownlite); border-radius: 50%" src="resources/images/profile.png" width="128" height="128"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-auto d-md-none" style="width: 1.0rem; height: 1.0rem"></div>
+                                                <div class="col-12 col-md-auto">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col col-md-auto"><button type="button" class="btn btn-outline-main ext show-pp" style="width: 100%"><i class="bi bi-camera-fill me-2"></i> Upload New Picture</button></div>
+                                                    </div>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-auto text-muted mt-2">JPG or PNG max size of 800 KB</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="mt-4">
+                                                <label>First Name</label>
+                                                <input class="form-control mt-2" type="text" placeholder="e.g. Olivia">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="mt-4">
+                                                <label>Last Name</label>
+                                                <input class="form-control mt-2" type="text" placeholder="e.g. Emily">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="mt-4">
+                                                <label>E-mail</label>
+                                                <input class="form-control mt-2" type="text" placeholder="e.g. oliviaemily@gmail.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="mt-4">
+                                                <label>Phone Number</label>
+                                                <input class="form-control mt-2" type="text" placeholder="e.g. +64 1234 5678">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mt-4">
+                                                <label>Address</label>
+                                                <textarea class="form-control mt-2" rows="4" placeholder="e.g. Whitemore St, Boulevard 99 O"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col col-md-auto">
+                                            <button type="submit" class="btn btn-main ext" style="width: 100%">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="page" data-page="password-change">
+                            <form>
+                                <div class="pad-v show-if-targeted" data-trigger="password-change" id="pw-success">
+                                    <div class="alert alert-success alert-dismissible" role="alert">
+                                        <span>Your password has been updated</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                    </div>
+                                </div>
+                                <div class="pad-v">
+                                    <div class="pb-4 row">
+                                        <div class="pad-v col-12 col-lg-6">
+                                            <div class="ext-label">
+                                                <label class="form-label mb-0">Current Password</label>
+                                                <div class="mb-3" style="position: relative">(Leave blank if you don't want to change it)</div>
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="password" class="form-control" id="current-pw">
+                                                <button type="button" class="btn btn-outline-secondary show-pw" data-pw="current-pw"><i class="bi bi-eye-fill"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class="pad-v col-12 col-lg-6">
+                                            <div class="ext-label">
+                                                <label class="form-label mb-0">New Password</label>
+                                                <div class="mb-3" style="position: relative">(Minimum 6 characters)</div>
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="password" class="form-control" id="new-pw" disabled>
+                                                <button type="button" class="btn btn-outline-secondary show-pw" data-pw="new-pw"><i class="bi bi-eye-fill"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="pad-v col-12 col-lg-6">
+                                            <div class="ext-label">
+                                                <label class="form-label mb-0">Confirm Password</label>
+                                            </div>
+                                            <div class="input-group has-validation">
+                                                <input type="password" class="form-control" id="confirm-pw" disabled>
+                                                <button type="button" class="btn btn-outline-secondary show-pw" data-pw="confirm-pw"><i class="bi bi-eye-fill"></i></button>
+                                                <div id="pw-feedback" class="invalid-feedback"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col col-lg-auto">
+                                            <button type="submit" class="btn btn-main ext" style="width: 100%">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+
+function showPage(page) {
+    $('.page').hide();
+    $('.page[data-page="' + page + '"]').show();
+
+    $('a.page-nav').removeClass('active');
+    $('a.page-nav[data-page="' + page + '"]').addClass('active');
+}
+
+$(document).ready(function() {
+    showPage('email-change');
+
+    $('.offcanvas-backdrop').on('click', function() {
+        $('.offcanvas').removeClass('show');
+    });
+    $('.sidebar-toggle').on('click', function() {
+        if ($('.sidebar').hasClass('show')) {
+            $('.sidebar').removeClass('show');
+        } else {
+            $('.sidebar').addClass('show');
+        }
+    });
+    $('a.sidebar-item').on('click', function(e) {
+        $('a.sidebar-item').removeClass('active');
+        $(e.currentTarget).addClass('active');
+    });
+    $('a.page-nav').on('click', function(e) {
+        showPage($(e.currentTarget).data('page'));
+    });
+    $('.resend').on('click', function() {
+        var modal = new bootstrap.Modal(document.getElementById('resend-modal'));
+        modal.show();
+    });
+    $('.show-pp').on('click', function() {
+        var modal = new bootstrap.Modal(document.getElementById('pp-modal'));
+        modal.show();
+
+        setTimeout(function() {
+            var cropper = new Cropper(document.getElementById('pp-img'), {
+                aspectRatio: 1.0,
+                crop: function(e) {
+                    console.log('image cropped');
+                }
+            });
+        }, 500);
+    });
+    $('#current-pw').on('input', function(e) {
+        if ($(e.target).val() === '') {
+            $('#new-pw').attr('disabled', 'disabled');
+            $('#confirm-pw').attr('disabled', 'disabled');
+        } else {
+            $('#new-pw').removeAttr('disabled');
+            $('#confirm-pw').removeAttr('disabled');
+        }
+    });
+    $('#confirm-pw, #new-pw').on('input', function(e) {
+        if ($('#confirm-pw').val() !== $('#new-pw').val()) {
+            $('#confirm-pw').addClass('is-invalid');
+            $('#pw-feedback').text('Confirm password does not match');
+        } else {
+            $('#confirm-pw').removeClass('is-invalid');
+            $('#pw-feedback').text('');
+        }
+    });
+    $('.show-pw').on('click', function(e) {
+        var input = document.getElementById($(e.currentTarget).data('pw'));
+
+        var icon = $(e.currentTarget).find('i');
+
+        icon.removeClass('bi-eye-slash-fill');
+        icon.removeClass('bi-eye-fill');
+        if ($(input).attr('type') === 'password') {
+            $(input).attr('type', 'text');
+            icon.addClass('bi-eye-slash-fill');
+        } else {
+            $(input).attr('type', 'password');
+            icon.addClass('bi-eye-fill');
+        }
+    });
+    $('.show-if-targeted').each(function(i, e) {
+        if ('#' + $(e).attr('id') === location.hash) {
+            showPage($(e).data('trigger'));
+        }
+    });
+});
+</script>
+

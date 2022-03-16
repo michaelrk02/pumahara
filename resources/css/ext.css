@@ -14,7 +14,7 @@ body.ext {
     height: 32px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .header-logo {
         height: 48px;
     }
@@ -54,7 +54,7 @@ body.ext {
     padding-top: 64px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .offcanvas.ext {
         width: 400px;
     }
@@ -105,14 +105,14 @@ body.ext {
 
 .main-content {
     padding-top: 64px;
-    height: calc(100vh - 64px);
+    width: 100vw;
+    height: 100vh;
     overflow-y: auto;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .main-content {
-        width: 100vw;
-        height: 100vh;
+        padding-top: 0px;
     }
 }
 
@@ -127,8 +127,7 @@ body.ext {
 }
 
 .list-group-item.ext {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding: 0.75rem 0.0rem;
 }
 
 .list-group-item.ext.active {
@@ -137,8 +136,25 @@ body.ext {
     color: var(--brown);
 }
 
-.list-group-item.ext.active .item {
+.list-group-item.ext.active .sidebar-nav {
     box-shadow: inset 4px 0px var(--brown);
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-icon {
+    width: 32px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.nav-text {
+    width: 100%
 }
 
 .pad {
@@ -151,6 +167,8 @@ body.ext {
 }
 
 .section-title {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     color: var(--brown);
 }
 
@@ -230,7 +248,7 @@ body.ext {
     margin-bottom: 1.0rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .ext-label {
         height: 3.5rem;
     }
@@ -251,10 +269,10 @@ body.ext {
     height: 32px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .notification-container {
-        width: 48px;
-        height: 48px;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -274,10 +292,10 @@ body.ext {
     font-size: 0.75rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .btn.notification .icon {
         margin: auto;
-        font-size: 1.25rem;
+        font-size: 1.0rem;
     }
 }
 
@@ -286,16 +304,16 @@ body.ext {
     transform: translate(-50%, -50%) !important;
     background-color: rgb(var(--bs-danger-rgb)) !important;
     border-radius: 50% !important;
-    top: 4px !important;
-    left: 24px !important;
-    padding: 0.25rem !important;
+    top: 8px !important;
+    left: 20px !important;
+    padding: 0.2rem !important;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .btn.notification .badge {
         top: 12px !important;
-        left: 32px !important;
-        padding: 0.35rem !important;
+        left: 24px !important;
+        padding: 0.3rem !important;
     }
 }
 
